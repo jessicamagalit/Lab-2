@@ -186,10 +186,6 @@ glimpse(id_or_stand_columns)
 Looking back at the data dictionary, rename rad_inc and inc to include _[unit] in the name. Unlike earlier options, be sure that this renaming is permanent, and stays with your data.frame (e.g. <-). Use glimpse to view your new data.frame.
 
 ```{r}
-# Rename columns for consistency
-tree_data <- tree_data %>%
-  rename(rad_inc_mm = rad_ib_mm, inc_mm = inc_mm)
-
 # View the updated dataset
 glimpse(tree_data)
 
@@ -203,19 +199,15 @@ BA(m2) = 0.00007854⋅DBH^2
 Where DBH is the diameter at breast height (cm). Use mutate to compute DBH in centimeters, and BA in m2 (HINT: Make sure rad_ib is in cm prior to computing the diameter!). What is the mean BA_m2 of the the species POTR in 2007?
 
 ```{r}
-# Create DBH and BA columns
+# Mutate to create DBH_cm and BA_m2
 tree_data <- tree_data %>%
   mutate(
-    DBH_cm = rad_inc_mm / 10,  # Correct column name
-    BA_m2 = 0.00007854 * (DBH_cm^2)  # Basal Area in m2
+    DBH_cm = rad_inc_mm / 10,  # Create DBH_cm from rad_inc_mm
+    BA_m2 = 7.854e-05 * (DBH_cm^2)  # Create BA_m2 based on DBH_cm
   )
 
-# Filter for species POTR in 2007 and calculate the mean Basal Area
-mean_BA_POTR_2007 <- tree_data %>%
-  filter(species == "POTR", year == 2007) %>%
-  summarise(mean_BA = mean(BA_m2, na.rm = TRUE))
-
-mean_BA_POTR_2007
+# View the updated data to check if everything looks good
+glimpse(tree_data)
 
 ```
 
