@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dryad | Data -- Variable effects of climate on forest growth in relation to climate extremes, disturbance, and forest dynamics</title>
+
+<link rel="icon" type="image/x-icon" href="/assets/favicon-9dca9f1266dd90170eda3f434bb2bafac251aa89bcbd54d62ccac4d9fcdf7216.ico" />
+<link rel="apple-touch-icon" type="img/png" href="/assets/apple-touch-icon-d0c84ea3c107ceea4723e33f645f020cfb93053a714e82cf33c4a1635c09c63f.png" sizes="180x180" />
+<link rel="icon" type="img/png" href="/assets/favicon-32x32-f19849fbdf938b16441abe204d6b42b681765be087a9dc1161a37c1f2855eb23.png" sizes="32x32" />
+<link rel="icon" type="img/png" href="/assets/favicon-16x16-97338249525bca809afd8c326eaa9b9e4688c33b308205a59b941575c5753a1d.png" sizes="16x16" />
+<link rel="mask-icon" type="img/svg" href="/assets/safari-pinned-tab-b812434212eb0f08c16137c74b0cccd5920d01dc98b93cdcdd4ee21d60e0e6b7.svg" color="#40853e" />
+<meta name="msapplication-TileColor" content="#40853e">
+<meta name="theme-color" content="#ffffff">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CWE0T05CC"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6CWE0T05CC');
+  </script>
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://datadryad.matomo.cloud/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='//cdn.matomo.cloud/datadryad.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="XZ5a482u82NUEddqys_GCHFwO-XmM6NjgGtK-Oh2mkI67njE9sWPmCgbtfpOmcHN2siibs1KLiLFlwPXsJ283g" />
+
+  <link rel="stylesheet" href="/assets/stash_engine/application-b7a9a3f838b9dc925afaf3a0001c72b6a422e031c2bf893f7a6bc54d7f877e2f.css" media="all" />
+<link rel="stylesheet" href="/assets/application-0220811d572822db22927c88e242dc64cd5b4ddbaca86a43c3d8f136e06a191a.css" media="all" />
+<link rel="stylesheet" href="/assets/stash_datacite/application-4f0ee18846f16216908af27cc24ae7bf2a0347190614034623f8fd813126ca74.css" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.4.0/leaflet.draw.css"/>
+<script src="/assets/stash_engine/application-a739df3d00e9fa4c9daedd997d9eb27276ca15e65e98189e1e3b3ef4dc29350b.js" data-turbolinks-track="true"></script>
+<script src="/assets/stash_datacite/application-4f5e6594a119ad76b93a74786c5c8a7e506117b60a26f62bd57490bc8313b462.js" data-turbolinks-track="true"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+  <script type="text/javascript" src="https://16077a4ae659.us-west-2.captcha-sdk.awswaf.com/16077a4ae659/jsapi.js" defer></script>
+<script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs" defer></script>
+
+  <script type="text/javascript" src="/javascript/dataload.js" defer></script>
+</head>
+<body class='landing_show'>
+  
+  
+<header class=" c-header">
+  <a class="c-skipnav" href="#maincontent">Skip to main content</a>
+  <div class="c-header__logos">
+    <a class="c-header__dash-logo-link js-nav-out" href="/">
+      <div><img class="c-header__dash-logo-svg" alt="Dryad" src="/assets/stash_engine/logo_dryad-9b1d5ca12cba8a192c530218271e007b6602f1a916e17fbfd801a0662e1d05b1.png" /></div>
+</a>  </div>
+  <nav class="c-header__nav js-header__nav" aria-label="Main">
+  <ul class="c-header__nav-group" id="mobile-nav-bar">
+    <li class="c-header__nav-item c-pot-item"><a class="js-nav-out" href="/stash/pots">Explore</a>
+      <li class="c-header__nav-item"><a class="js-nav-out" href="/search">Explore<span class="hide-mobile">&nbsp;data</span></a>
+      <li class="c-header__nav-item last-child">
+        <form role="search" class="o-global-search c-header__global-search" action="/search" accept-charset="UTF-8" method="get">
+          <input name="utf8" value="✓" type="hidden">
+          <label class="o-global-search__label" for="search-field-input1">Search Dryad data</label>
+          <input class="o-global-search__input" id="search-field-input1" type="search" name="q" placeholder="Search">
+          <button aria-label="Submit search" class="o-global-search__submit-button" type="submit" id="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </li>
+    <li class="c-header__nav-item show-mobile">
+      <form class="button_to" method="get" action="/stash/sessions/choose_login"><button class="c-header__menu-button" title="Login and then submit a new dataset" type="submit">Submit</button></form>
+    </li>
+    <li class="c-header__nav-item show-mobile">
+      <button id="header-menu-button" aria-haspopup="menu" class="c-header__menu-button" aria-controls="site-menu" aria-expanded="false">More <i class="fa fa-bars" aria-hidden="true"></i></button>
+    </li>
+  </ul>
+
+  <ul class="c-header__nav-group" id="site-menu">
+
+    <li class="c-header__nav-item"><a href="/stash/about">Who we are</a></li>
+
+    <li class="c-header__nav-item">
+      <a href="/stash/mission">What we do</a>
+    </li>
+
+    <li class="c-header__nav-item">
+      <a href="/stash/join_us">Join us</a>
+    </li>
+
+    <li class="c-header__nav-item">
+      <button class="c-header_nav-button" aria-haspopup="menu" aria-expanded="false" aria-controls="help-menu">Help</button>
+      <ul class="c-header__nav-submenu" id="help-menu" hidden>
+        <li><a href="/stash/requirements">Submission requirements</a>
+        <li><a href="/stash/submission_process">Submission walkthrough</a>
+        <li><a href="/stash/best_practices">Good data practices</a>
+        <li><a href="/stash/process">Publication process</a>
+        <li><a href="/stash/reuse">Reuse Dryad data</a>
+        <li><a href="/stash/api">Dryad API</a>
+        <li><a href="/stash/contact">Contact support</a>
+      </ul>
+    </li>
+
+    <li class="c-header__nav-item">  <a id="log-in-out" class="js-nav-out" href="/stash/sessions/choose_login">Login</a>
+</li>
+  </ul>
+</nav>
+
+</header>
+
+  
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $('.flash_button').click(function() {
+      $( this ).parent().remove();
+    });
+});
+</script>
+
+  <main id="maincontent">
+  <!-- Track View for COUNTER and new DataCite metrics widget -->
+
+<script data-autotrack="false" src="https://cdn.jsdelivr.net/npm/@datacite/datacite-tracker"></script>
+<script>
+	const { trackMetric } = DataCiteTracker.Tracker({
+		repoId: 'da-80l49bsf',
+		trackLocalhost: true,
+	});
+	let dc_download = DataCiteTracker.MetricType.Download;
+	trackMetric(DataCiteTracker.MetricType.View, { doi: '10.5061/dryad.18pm5' });
+
+	document.addEventListener("DOMContentLoaded", function(){
+		// track individual downloads
+		const downloadLinks = document.querySelectorAll('a.js-individual-dl');
+		downloadLinks.forEach((link) => {
+			link.addEventListener('click', (e) => {
+				trackMetric(DataCiteTracker.MetricType.Download, { doi: '10.5061/dryad.18pm5' });
+			});
+		});
+
+		const downloadFullLinks = document.querySelectorAll('button.js-download');
+		downloadFullLinks.forEach((link) => {
+			link.addEventListener('click', (e) => {
+				trackMetric(DataCiteTracker.MetricType.Download, { doi: '10.5061/dryad.18pm5' });
+			});
+		});
+	});
+</script>
+<div class="c-columns">
+	<main class="t-landing__main c-columns__content">
+		<div id="display_resource">
+  	        <h1 class="o-heading__level1 ">Data from: Variable effects of climate on forest growth in relation to climate extremes, disturbance, and forest dynamics</h1>
+
+  <div class="t-landing__metadata o-metadata">
+    		<p class="o-metadata__author-list">
+    <span class='o-metadata__author'>Itter, Malcolm S.</span><a class='o-metadata__link' aria-label='Affiliation 1' href='#aff204'>1</a>; <span class='o-metadata__author'>Finley, Andrew O.</span><a class='o-metadata__link' aria-label='Affiliation 1' href='#aff204'>1</a>; <span class='o-metadata__author'>D'Amato, Anthony W.</span><a class='o-metadata__link' aria-label='Affiliation 2' href='#aff274'>2</a>; <span class='o-metadata__author'>Foster, Jane R.</span><a class='o-metadata__link' aria-label='Affiliation 3' href='#aff239'>3</a>; <span class='o-metadata__author'>Bradford, John B.</span><a class='o-metadata__link' aria-label='Affiliation 4' href='#aff169'>4</a>
+		</p>
+	  <div class="o-metadata__aff-list">
+	  	<p role="heading" aria-level="2"><button class="o-button__plain-text4" id="affiliation-list-button" aria-expanded="false" aria-controls="affiliation-list">Author affiliations<i class="fas fa-caret-down" aria-hidden="true"></i></button></p>
+	  	<ol id="affiliation-list" hidden>
+	  		<li id="aff204"><a href="/search?q=https%3A%2F%2Fror.org%2F05hs6h993">Michigan State University</a></li>
+	  		<li id="aff274"><a href="/search?q=https%3A%2F%2Fror.org%2F0155zta11">University of Vermont</a></li>
+	  		<li id="aff239"><a href="/search?q=https%3A%2F%2Fror.org%2F017zqws13">University of Minnesota</a></li>
+	  		<li id="aff169"><a href="/search?q=https%3A%2F%2Fror.org%2F035a68863">United States Geological Survey</a></li>
+	  	</l>
+	  </div>
+	  <script type="text/javascript">
+	  	document.getElementById('affiliation-list-button').addEventListener('click', (e) => {
+	  		const list = document.getElementById('affiliation-list')
+	  		const button = document.getElementById('affiliation-list-button')
+	  		if (list.hasAttribute('hidden')) {
+		  		button.setAttribute('aria-expanded', 'true')
+	  		} else {
+	  			button.setAttribute('aria-expanded', 'false')
+		  	}
+		  	button.lastElementChild.classList.toggle('fa-caret-down')
+		  	button.lastElementChild.classList.toggle('fa-caret-up')
+		  	list.toggleAttribute('hidden')
+	  	})
+	  	const openHash = () => {
+	  		const hashed = document.getElementById(window.location.hash.substring(1))
+		    if (hashed.parentElement.hasAttribute('hidden')) {
+		    	document.getElementById('affiliation-list-button').click()
+		    }
+	  	}
+	  	if (window.location.hash) openHash()
+	  	window.addEventListener('hashchange', openHash)
+	  </script>
+
+    <div class="o-metadata__group2">
+  <span class="o-metadata__group2-item">Published Jan 30, 2017</span>
+  on <span class="o-metadata__group2-item">Dryad</span>.
+    <span class="o-metadata__group2-item">
+      https://doi.org/10.5061/dryad.18pm5
+    </span>
+</div>
+
+  </div>
+
+  <div class="data_files_section">
+  <h2>Data files</h2>
+  <div>
+    <!-- list individual files -->
+      <details id="download_resource" class="c-file-group"  open>
+        <summary role="button" class="o-showhide__summary c-file-group__summary">
+          <span>Jan 30, 2017 version files</span>
+          <span>5.71 MB</span>
+        </summary>
+        <form id="download-select-form" ></form>
+        <ul class="c-file-group__list">
+            <li>
+              <span>
+              <a title="Itter_et_al_EAP16-0589.R1.tar" target="_blank" class="js-individual-dl" href="/stash/downloads/file_stream/72660"><i class="fas fa-download" aria-hidden="true"></i>Itter_et_al_EAP16-0589.R1.tar</a>
+              </span>
+              <div>
+                5.53 MB
+                  <input class="select-file-download" data-size="5533696" type="checkbox" name="Itter_et_al_EAP16-0589.R1.tar" checked hidden aria-label="Select Itter_et_al_EAP16-0589.R1.tar for download" form="download-select-form">
+              </div>
+            </li>
+            <li>
+              <span>
+              <a title="README_for_Itter_et_al_EAP16-0589.R1.pdf" target="_blank" class="js-individual-dl" href="/stash/downloads/file_stream/72661"><i class="fas fa-download" aria-hidden="true"></i>README_for_Itter_et_al_EAP16-0589.R1.pdf</a>
+                <div id="file_preview_check72661" data-load="/stash/data_file/preview_check/72661.js">
+                  <i class="fa fa-spin fa-spinner" aria-hidden="true" style="color: #888"></i>
+                </div>
+              </span>
+              <div>
+                173.90 KB
+                  <input class="select-file-download" data-size="173900" type="checkbox" name="README_for_Itter_et_al_EAP16-0589.R1.pdf" checked hidden aria-label="Select README_for_Itter_et_al_EAP16-0589.R1.pdf for download" form="download-select-form">
+              </div>
+            </li>
+        </ul>
+      </details>
+    <div id="file_preview_box"></div>
+    <!-- full download second -->
+    <div class="o-download">
+  <form id="zip_download" action="/stash/dataset/downloadZip/doi_10_5061_dryad_18pm5__v20170130.zip" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="JxePcgg-PYN-nvNrdQKCVdgba1ElJD4Ukxq3Xr1zeoLvm_dmuUfRZewFx4BnZX0N2sKbQW6mNQNPxzQMlqieCg" autocomplete="off" />
+      <div id="file_downloads"></div>
+      <button type="button" class="o-download__files js-download" id="download_zip_button" >
+        <span id="download_icon"></span>
+        Download full dataset
+      </button>
+</form>  <div class="screen-reader-only" id="accessible-dl-msg" aria-live="assertive"></div>
+</div>
+
+  </div>
+</div>
+<script type="text/javascript">
+  const load_preview = (n) => {
+    const box = document.getElementById('file_preview_box');
+    box.innerHTML = `<div class="file_preview"><p role="heading" level="3" id="preview_file_name"><span>Preview: ${n}</span></p><p style="text-align:center"><i class="fa fa-spin fa-spinner" aria-hidden="true" style="color: #888"></i></p></div>`;
+    box.scrollIntoView();
+  }
+  const close_preview = () => {
+    document.getElementById('file_preview_box').innerHTML = '';
+  }
+</script>
+
+    <h2 class="o-heading__level2">Abstract</h2>
+  <div class="t-landing__text-wall ">
+    Changes in the frequency, duration, and severity of climate extremes are forecast to occur under global climate change. The impacts of climate extremes on forest productivity and health remain difficult to predict due to potential interactions with disturbance events and forest dynamics—changes in forest stand composition, density, size and age structure over time. Such interactions may lead to non-linear forest growth responses to climate involving thresholds and lag effects. Understanding how forest dynamics influence growth responses to climate is particularly important given stand structure and composition can be modified through management to increase forest resistance and resilience to climate change. To inform such adaptive management, we develop a hierarchical Bayesian state space model in which climate effects on tree growth are allowed to vary over time and in relation to past climate extremes, disturbance events, and forest dynamics. The model is an important step toward integrating disturbance and forest dynamics into predictions of forest growth responses to climate extremes. We apply the model to a dendrochronology data set from forest stands of varying composition, structure, and development stage in northeastern Minnesota that have experienced extreme climate years and forest tent caterpillar defoliation events. Mean forest growth was most sensitive to water balance variables representing climatic water deficit. Forest growth responses to water deficit were partitioned into responses driven by climatic threshold exceedances and interactions with insect defoliation. Forest growth was both resistant and resilient to climate extremes with the majority of forest growth responses occurring after multiple climatic threshold exceedances across seasons and years. Interactions between climate and disturbance were observed in a subset of years with insect defoliation increasing forest growth sensitivity to water availability. Forest growth was particularly sensitive to climate extremes during periods of high stem density following major regeneration events when average inter-tree competition was high. Results suggest the resistance and resilience of forest growth to climate extremes can be increased through management steps such as thinning to reduce competition during early stages of stand development and small-group selection harvests to maintain forest structures characteristic of older, mature stands.
+  </div>
+
+
+
+
+  
+
+
+
+    <h2 id="usage" tabindex="0" class="expand-button" role="button" aria-expanded="false" aria-controls="usage-sec">Usage notes</h2>
+  <div id="usage-sec" hidden class="t-landing__text-wall ">
+    <div class="o-metadata__file-usage-entry"><h4 class="o-heading__level3-file-title">Northeastern Minnesota Tree Growth Data</h4><div class="o-metadata__file-description">Annual radial growth increment data for 2,291 trees located in 35 stands in and around Superior National Forest in northeastern Minnesota.  Data includes stand-level measurements including water balance variables and years since cohort initiation.</div><div class="o-metadata__file-name">Itter_et_al_EAP16-0589.R1.tar<br></div><div class="o-metadata__file-name"></div></div>
+  </div>
+
+
+  <h2 tabindex="0" id="citations" class="expand-button" role="button" aria-expanded="false" aria-controls="citations-sec">Works referencing this dataset</h2>
+  <div id="citations-section" data-load="/stash/landing/citations/21191.js"></div>
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "Dataset",
+  "@id": "https://doi.org/10.5061/dryad.18pm5",
+  "name": "Variable effects of climate on forest growth in relation to climate extremes, disturbance, and forest dynamics",
+  "description": [
+    "Changes in the frequency, duration, and severity of climate extremes are forecast to occur under global climate change. The impacts of climate extremes on forest productivity and health remain difficult to predict due to potential interactions with disturbance events and forest dynamics—changes in forest stand composition, density, size and age structure over time. Such interactions may lead to non-linear forest growth responses to climate involving thresholds and lag effects. Understanding how forest dynamics influence growth responses to climate is particularly important given stand structure and composition can be modified through management to increase forest resistance and resilience to climate change. To inform such adaptive management, we develop a hierarchical Bayesian state space model in which climate effects on tree growth are allowed to vary over time and in relation to past climate extremes, disturbance events, and forest dynamics. The model is an important step toward inte...",
+    "Northeastern Minnesota Tree Growth DataAnnual radial growth increment data for 2,291 trees located in 35 stands in and around Superior National Forest in northeastern Minnesota.  Data includes stand-level measurements including water balance variables and years since cohort initiation.Itter_et_al_EAP16-0589.R1.tar"
+  ],
+  "url": "http://datadryad.org/stash/dataset/doi%253A10.5061%252Fdryad.18pm5",
+  "contentUrl": [
+    "http://datadryad.org/stash/downloads/file_stream/72660",
+    "http://datadryad.org/stash/downloads/file_stream/72661"
+  ],
+  "identifier": "https://doi.org/10.5061/dryad.18pm5",
+  "version": 1,
+  "isAccessibleForFree": true,
+  "keywords": [
+    "Bayesian state space model",
+    "forest tent caterpillar",
+    "tree rings"
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Malcolm S. Itter",
+      "givenName": "Malcolm S.",
+      "familyName": "Itter",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/05hs6h993",
+        "name": "Michigan State University"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Andrew O. Finley",
+      "givenName": "Andrew O.",
+      "familyName": "Finley",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/05hs6h993",
+        "name": "Michigan State University"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Anthony W. D'Amato",
+      "givenName": "Anthony W.",
+      "familyName": "D'Amato",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/0155zta11",
+        "name": "University of Vermont"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Jane R. Foster",
+      "givenName": "Jane R.",
+      "familyName": "Foster",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/017zqws13",
+        "name": "University of Minnesota"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "John B. Bradford",
+      "givenName": "John B.",
+      "familyName": "Bradford",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/035a68863",
+        "name": "United States Geological Survey"
+      }
+    }
+  ],
+  "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/zip",
+    "contentUrl": "http://datadryad.org/api/v2/datasets/doi%253A10.5061%252Fdryad.18pm5/download"
+  },
+  "temporalCoverage": [
+    "2017",
+    "2020-07-13T00:00:00Z"
+  ],
+  "spatialCoverage": "Northeastern Minnesota",
+  "citation": "http://doi.org/10.1002/eap.1518",
+  "license": {
+    "@type": "CreativeWork",
+    "name": "Creative Commons Zero v1.0 Universal",
+    "license": "https://spdx.org/licenses/CC0-1.0.html"
+  },
+  "publisher": {
+    "@id": "https://datadryad.org",
+    "@type": "Organization",
+    "legalName": "Dryad Data Platform",
+    "name": "Dryad",
+    "url": "https://datadryad.org"
+  },
+  "provider": {
+    "@id": "https://datadryad.org"
+  }
+}
+</script>
+
+		</div>
+	</main>
+	<aside class="c-columns__sidebar">
+	  <div class="sidebox" id="sidebox-cite">
+  <div id="cite_section">
+  <h2 id="expand-citation" tabindex="0" role="button" aria-expanded="false" aria-controls="dataset-citation">Citation<i class="fas fa-caret-down" aria-hidden="true"></i></h2>
+<button title="Copy citation" aria-label="Copy citation" class="copy-icon" data-item="Citation"><i class="fa fa-paste" role="status"></i><span>Copy</span></button>
+<p id="dataset-citation" hidden>Itter, Malcolm S.; Finley, Andrew O.; D&#39;Amato, Anthony W. et al. (2017). Data from: Variable effects of climate on forest growth in relation to climate extremes, disturbance, and forest dynamics [Dataset]. Dryad. <a href="https://doi.org/10.5061/dryad.18pm5">https://doi.org/10.5061/dryad.18pm5</a></p>
+
+<script type="text/javascript">
+  const expandCitation = (e) => {
+    const citation = document.getElementById('dataset-citation')
+    const button = document.getElementById('expand-citation')
+    if (citation.hasAttribute('hidden')) {
+      button.setAttribute('aria-expanded', 'true')
+    } else {
+      button.setAttribute('aria-expanded', 'false')
+    }
+    button.lastElementChild.classList.toggle('fa-caret-down')
+    button.lastElementChild.classList.toggle('fa-caret-up')
+    citation.toggleAttribute('hidden')
+  }
+  document.getElementById('expand-citation').addEventListener('click', expandCitation)
+  document.getElementById('expand-citation').addEventListener('keydown', (e) => {
+    if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault()
+      expandCitation(e)
+    }
+  });
+</script>
+
+  </div>
+
+  <div id="show_metrics"
+       data-load="/stash/landing/metrics/21191">
+    <i class="fa fa-spin fa-spinner" aria-hidden="true" style="color: #888"></i>
+  </div>
+  
+    <div id="share_section">
+      <div id="share_buttons">
+  <h2>Share:</h2>
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdatadryad.org%2Fstash%2Fdataset%2Fdoi%3A10.5061%2Fdryad.18pm5" title="Share on LinkedIn" data-share="linkedin" target="blank"><i class="fab fa-linkedin" aria-hidden="true"></i><span class="screen-reader-only">Share on LinkedIn (opens in new window)</span></a>
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdatadryad.org%2Fstash%2Fdataset%2Fdoi%3A10.5061%2Fdryad.18pm5" title="Share on Facebook" data-share="facebook" target="blank"><i class="fab fa-facebook-square" aria-hidden="true"></i><span class="screen-reader-only">Share on Facebook (opens in new window)</span></a>
+  <!-- Twitter -->
+  <a href="https://twitter.com/intent/tweet?text=Dryad+dataset%3A+Data+from%3A+Variable+effects+of+climate+on+forest+growth+in+relation+to+climate+extremes%2C+disturbance%2C+and+forest+dynamics%0A&url=https%3A%2F%2Fdatadryad.org%2Fstash%2Fdataset%2Fdoi%3A10.5061%2Fdryad.18pm5" title="Share on Twitter" data-share="twitter" target="blank"><i class="fab fa-twitter-square" aria-hidden="true"></i><span class="screen-reader-only">Share on Twitter (opens in new window)</span></a>
+  <!-- Reddit -->
+  <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fdatadryad.org%2Fstash%2Fdataset%2Fdoi%3A10.5061%2Fdryad.18pm5&title=Dryad+dataset%3A+Data+from%3A+Variable+effects+of+climate+on+forest+growth+in+relation+to+climate+extremes%2C+disturbance%2C+and+forest+dynamics" title="Share on Reddit" data-share="reddit" target="blank"><i class="fab fa-reddit-square" aria-hidden="true"></i><span class="screen-reader-only">Share on Reddit (opens in new window)</span></a>
+  <!-- Email -->
+  <a href="mailto:?subject=Dryad+dataset%3A+Data+from%3A+Variable+effects+of+climate+on+forest+growth+in+relation+to+climate+extremes%2C+disturbance%2C+and+forest+dynamics&body=Citation%3A+Itter%2C+Malcolm+S.%3B+Finley%2C+Andrew+O.%3B+D%27Amato%2C+Anthony+W.+et+al.+%282017%29.+Data+from%3A+Variable+effects+of+climate+on+forest+growth+in+relation+to+climate+extremes%2C+disturbance%2C+and+forest+dynamics+%5BDataset%5D.+Dryad.+https%3A%2F%2Fdoi.org%2F10.5061%2Fdryad.18pm5%0A%0AAbstract%3A+Changes+in+the+frequency%2C+duration%2C+and+severity+of+climate+extremes+are+forecast+to+occur+under+global+climate+change.+The+impacts+of+climate+extremes+on+forest+productivity+and+health+remain+difficult+to+predict+due+to+potential+interactions+with+disturbance+events+and+forest+dynamics%E2%80%94changes+in+forest+stand+composition%2C+density%2C+size+and+age+structure+over+time.+Such+interactions+may+lead+to+non-linear+forest+growth+responses+to+climate+involving+thresholds+and+lag+effects.+Understanding+how+forest+dynamics+influence+growth+responses+to+climate+is+particularly+important+given+stand+structure+and+composition+can+be+modified+through+management+to+increase+forest+resistance+and+resilience+to+climate+change.+To+inform+such+adaptive+management%2C+we+develop+a+hierarchical+Bayesian+state+space+model+in+which+climate+effects+on+tree+growth+are+allowed+to+vary+over+time+and+in+relation+to+past+climate+extremes%2C+disturbance+events%2C+and+forest+dynamics.+The+model+is+an+important+step+toward+integrating+disturbance+and+forest+dynamics+into+predictions+of+forest+growth+responses+to+climate+extremes.+We+apply+the+model+to+a+dendrochronology+data+set+from+forest+stands+of+varying+composition%2C+structure%2C+and+development+stage+in+northeastern+Minnesota+that+have+experienced+extreme+climate+years+and+forest+tent+caterpillar+defoliation+events.+Mean+forest+growth+was+most+sensitive+to+water+balance+variables+representing+climatic+water+deficit.+Forest+growth+responses+to+water+deficit+were+partitioned+into+responses+driven+by+climatic+threshold+exceedances+and+interactions+with+insect+defoliation.+Forest+growth+was+both+resistant+and+resilient+to+climate+extremes+with+the+majority+of+forest+growth+responses+occurring+after+multiple+climatic+threshold+exceedances+across+seasons+and+years.+Interactions+between+climate+and+disturbance+were+observed+in+a+subset+of+years+with+insect+defoliation+increasing+forest+growth+sensitivity+to+water+availability.+Forest+growth+was+particularly+sensitive+to+climate+extremes+during+periods+of+high+stem+density+following+major+regeneration+events+when+average+inter-tree+competition+was+high.+Results+suggest+the+resistance+and+resilience+of+forest+growth+to+climate+extremes+can+be+increased+through+management+steps+such+as+thinning+to+reduce+competition+during+early+stages+of+stand+development+and+small-group+selection+harvests+to+maintain+forest+structures+characteristic+of+older%2C+mature+stands." title="Share with email" data-share="email" target="blank"><i class="fa fa-envelope-square" aria-hidden="true"></i><span class="screen-reader-only">Share with email (opens in new window)</span></a>
+  <!-- Copy -->
+  <button id="share-panel__copy-url" title="Copy link to this page"><i class="fa fa-share-square"></i><span class="screen-reader-only">Copy link to this page</span></button>
+</div>
+<div role="status">
+  <p id="copy-success" hidden><i class="fa fa-check" aria-hidden="true"></i> Link copied</p>
+</div>
+<script type="text/javascript">
+  document.getElementById('share-panel__copy-url').addEventListener('click', () => {
+    window.navigator.clipboard.writeText(window.location.href).then(async () => {
+      const flash = document.getElementById('copy-success');
+      flash.removeAttribute('hidden');
+      await new Promise(res => setTimeout(res, 3000));
+      flash.setAttribute('hidden', 'true');
+    });
+  })
+</script>
+
+    </div>
+
+    <div id="show_license"
+         data-load="/stash_datacite/licenses/details.js?resource_id=21255">
+      <i class="fa fa-spin fa-spinner" aria-hidden="true" style="color: #888"></i>
+    </div>
+</div>
+
+<div class="sidebox" id="sidebox-search">
+  <div id="keyword_section">
+    <h2>Subject keywords</h2>
+    <div id="show_subjects"
+         data-load="/stash_datacite/subjects/landing.js?resource_id=21255">
+      <i class="fa fa-spin fa-spinner" aria-hidden="true" style="color: #888"></i>
+    </div>
+  </div>
+    <div id="show_funding">
+  	<h2>Funding</h2>
+  <ul class="o-list">
+  	  <li>
+          <a href="/search?q=https%3A%2F%2Fror.org%2F021nxhr62">National Science Foundation</a>
+        
+          : <span >DMS-1513481</span>
+  	  </li>
+  </ul>
+  </div>
+
+</div>
+
+<div class="sidebox" id="sidebox-related_works">
+  <h2>Related works</h2>
+  <div id="show_related_works"
+       data-load="/stash_datacite/related_identifiers/show.js?resource_id=21255">
+    <p><i class="fa fa-spin fa-spinner" aria-hidden="true" style="color: #888"></i></p>
+  </div>
+</div>
+
+	</aside>
+</div>
+
+
+<script type="text/javascript">
+  function copyItem(e) {
+    const item = e.currentTarget.dataset.item
+    const icon = e.currentTarget.firstElementChild
+    const citation = e.currentTarget.nextElementSibling.innerText
+    window.navigator.clipboard.writeText(citation).then(() => {
+      icon.classList.remove('fa-paste');
+      icon.classList.add('fa-check');
+      icon.innerHTML = `<span class="screen-reader-only">${item} copied</span>`
+      setTimeout(function(){
+        icon.parentElement.setAttribute('title', `Copy ${item.toLowerCase()}`);
+        icon.classList.add('fa-paste');
+        icon.classList.remove('fa-check');
+        icon.innerHTML = '';
+      }, 2000);
+    });
+  }
+  document.querySelectorAll('.copy-icon').forEach((button) => {
+    button.addEventListener('click', copyItem)
+    button.addEventListener('keydown', (e) => {
+      if (event.key === ' ' || event.key === 'Enter') {
+        copyItem(e)
+      }
+    });
+  });
+  document.querySelectorAll('.t-landing__text-wall a').forEach((link) => {
+    const span = document.createElement('span')
+    span.classList.add('screen-reader-only')
+    span.innerHTML = ' (opens in new window)'
+    link.appendChild(span)
+    link.setAttribute('target', '_blank')
+  });
+</script>
+
+  </main>
+  <footer class="c-footer" id="page-footer">
+  <div class="c-footer__link-group">
+    <div class="c-footer__policy-group">
+      <a href="/stash/privacy">Privacy</a>
+      <a href="/stash/accessibility" class="js-nav-out">Accessibility</a>
+      <a href="/stash/terms">Terms of service</a>
+      <a href="/stash/membership">Membership</a>
+    </div>
+    <div class="c-footer__social-group">
+      <a href="/stash/contact"><i class="fa fa-envelope-square" aria-hidden="true"></i>Contact us</a>
+      <a href="https://twitter.com/datadryad" class="js-nav-out"><i class="fab fa-twitter-square" aria-hidden="true"></i>Dryad on Twitter</a>
+      <a href="https://blog.datadryad.org/" class="js-nav-out"><i class="fa fa-rss-square" aria-hidden="true"></i>Latest news</a>
+      <a href="https://blog.datadryad.org/jobs" class="js-nav-out"><i class="fa fa-pencil-square" aria-hidden="true"></i>Jobs &amp; opportunities</a>
+    </div>
+  </div>
+  <div class="c-footer__link-group">
+    <span>© 2025 Dryad. <a href="/stash/terms#copyright">Content on this site is licensed for reuse</a>.</span>
+  </div>
+</footer>
+
+  <script type="text/javascript" src="/javascript/interactions.js"></script>
+  <dialog id="railsConfirmDialog" class="modalDialog" role="alertdialog" aria-labelledby="railsConfMsg"
+  aria-describedby="railsConfMsg" aria-modal="true">
+  <div>
+    <h1 id="railsConfMsg" class="o-heading__level2" style="width: 25rem; float: left;"></h1>
+    <button id="railsConfirmDialogClose" class="button-close-modal" style="float: right;" aria-label="close" type="button"></button>
+    <div style="clear: both;">&nbsp;</div>
+    <div style="display: flex; justify-content: flex-end; column-gap: 1rem;">
+      <button id="railsConfirmDialogYes" class="o-button__plain-text2" style="padding: .5rem 2rem;" value="default">Yes</button>
+      <button id="railsConfirmDialogNo" class="o-button__plain-text3" style="padding: .5rem 2rem;" value="cancel">No</button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  // adds the polyfill for firefox and some other browsers that are not up to date.
+  // https://github.com/GoogleChrome/dialog-polyfill
+
+  const modal = document.getElementById('railsConfirmDialog');
+  dialogPolyfill.registerDialog(modal);
+</script>
+  <dialog id="genericModalDialog" class="modalDialog" aria-modal="true">
+  <div>
+    <div class="modalClose">
+      <button id="genericModalClose" aria-label="close" type="button"></button>
+    </div>
+    <!-- to display anything in the dialog, replace content within the genericModalContent (using Javascript) and attach any events
+      you need for what you add.  The dialog comes with an event for closing and taking no action for the close button.
+
+      Open modal with <item>.showModal(); and close with <item>.close();
+      -->
+    <div id="genericModalContent" class="c-modal-content__normal">&nbsp;</div>
+  </div>
+</dialog>
+
+<script>
+  // adds the polyfill for firefox and some other browsers that are not up to date.
+  // https://github.com/GoogleChrome/dialog-polyfill
+
+  const modal2 = document.getElementById('genericModalDialog');
+  dialogPolyfill.registerDialog(modal2);
+
+  $('#genericModalClose').click(function(){
+      console.log("closing genericModal");
+      document.querySelector('#genericModalContent').classList.replace('c-modal-content__wide',
+								       'c-modal-content__normal');
+      document.querySelector('#genericModalContent').classList.replace('c-modal-content__cedar',
+								       'c-modal-content__normal');
+      $('#genericModalDialog')[0].close(); // uses [0] to get native object rather than jQuery object (I think)
+      $('#genericModalContent').html("");
+  });
+</script>
+
+  <script type="text/javascript" async>
+  const dlbutton = document.getElementById('download_zip_button');
+  if ("serviceWorker" in navigator) {
+    const zip_url = '/stash/downloads/zip_assembly_info/21255';    
+    const scope = '/stash/dataset/';
+    const messageChannel = new MessageChannel();
+navigator.serviceWorker.register('/stash/service-worker.js', { scope });
+let keepAlive = null;
+const dialog = document.getElementById('genericModalDialog');
+const dialogContent = document.getElementById('genericModalContent');
+const form = document.getElementById('zip_download');
+const inputs = document.getElementById('file_downloads');
+navigator.serviceWorker.ready.then(worker => {
+  worker.active.postMessage({type: 'PORT_INITIALIZATION', url: form.action}, [messageChannel.port2]); 
+});
+const insertFiles = async (files) => {
+  const selectForm = document.getElementById('download-select-form').elements
+  for (const f of files) {
+    if (selectForm[f.filename]?.checked) {
+      for (const k of Object.keys(f)) {
+        const i = document.createElement('input');
+        i.setAttribute('type', 'hidden');
+        i.setAttribute('name', k);
+        i.setAttribute('value', f[k]);
+        inputs.appendChild(i);
+      }
+    }
+  }
+  return true;
+}
+const loadFiles = async (files) => {
+  await insertFiles(files);
+  form.submit();
+  dlbutton.childNodes[1].nodeValue = 'Download full dataset';
+  dialogContent.innerHTML = '<h1>Download in progress</h1><p>Closing this window may interrupt the dataset download. Please keep this window open until your download is complete.</p><p><span id="dl_filename"></span> <span id="dl_filesize"></span><br/><progress id="dl_progressbar" value="0"></progress></p>';
+  dialog.showModal();
+  keepAlive = setInterval(() => {
+    navigator.serviceWorker.ready.then(worker => {
+      worker.active.postMessage({type: 'KEEP_ALIVE'})
+    })
+  }, 10000);
+}
+const failMessage = () => {
+  if (dialog.open) dialog.close();
+  dialogContent.innerHTML = '<h1>Download error</h1><p>Please reload and try again, or download the individual files.</p>';
+  dialog.showModal();
+  dlbutton.childNodes[1].nodeValue = 'Download full dataset';
+  dlbutton.classList.add('o-download__files');
+  dlbutton.classList.remove('o-download__wait');
+  dlbutton.removeAttribute('disabled');
+}
+const checkResponse = async (response) => {
+  if (response.ok) {
+    const files = await response.json();
+    loadFiles(files);
+  } else if (response.status === 405) {
+    dialogContent.innerHTML = '<h1>Confirm you are human</h1><div id="captcha-div"></div>'
+    AwsWafCaptcha.renderCaptcha(document.getElementById('captcha-div'), {
+      apiKey: 'OqA0o1lGXgubzh918BKgrbWCLVFKb5xL3FLAIYf63QqbCTic7ynhvwViwoEdMzuKgvEHmbjbigMAdy6gLNyDRe4qhdiSwsaBMu0yVtDgS+sGd13E8WzeiysUXXKAF85+x8BVDr9VM1x/n6IT+4aLoAgYpYt51//u+wZCYal8WOXWIpkxz88GmF2JCoiEYn4GxDX9SlRyO8IiJ7Id55Fkq6zXtiZs9L9XHM4Pr/iF50wcT+/L1DgBCH+LUYGIYR04TdJQpgp0cD3kL7rMgmpLfeulydUu6ceYJPGgUVWzOguE5fsAzVbPzkNssRUo9ku0oz/ozDvUucntUEPMbrBSxC3EfoCM6aygV/riufSZm4jk9IV0pgUjvzXCrex8lTZtalefN451KiFTT9Ipa9ipjBKZuKDO2fTvsMK1xB82VsA9M9VmSLtMlkFA/LPJj/2A/mGno+kubKAkgWTRXTA0DTJ9/IQ4D+uSZsoWCidnCfUQk4/qkBZa6BOw8SB1n/IXDYTk5Uk4oDG0HuhUogJvwGKQVUSBzbcDdvmgxO8xcj6B7k7W0j64AO2sSKjAdG8BMhtouxeu71Gb76YBIrv3PswHmyESe5PYgeRuURUEZkL9OTON4lNWP4iKqP/D6e09SVWtlNpkv9aJKnsYQhOizCynKfGS/iWEvBXP70G4JOo=_0_1',
+      skipTitle: true,
+      onLoad: () => { if (!dialog.open) dialog.showModal(); },
+      onSuccess: async (token) =>  {
+        dialog.close();
+        const response = await AwsWafIntegration.fetch(zip_url);
+        checkResponse(response);
+      },
+      onError: failMessage,
+    });
+  } else {
+    failMessage();
+  }
+}
+dlbutton.addEventListener('click', async e => {
+  dlbutton.disabled = true;
+  dlbutton.classList.remove('o-download__files');
+  dlbutton.classList.add('o-download__wait');
+  dlbutton.childNodes[1].nodeValue = 'Preparing download';
+  const response = await AwsWafIntegration.fetch(zip_url);
+  checkResponse(response);
+})
+messageChannel.port1.start();
+messageChannel.port1.addEventListener("message", ({data}) => {
+  if (data.msg === 'Headers') {
+    const {filename, size} = data
+    document.getElementById('dl_filename').innerText = filename
+    document.getElementById('dl_filesize').innerText = `(${formatSizeUnits(Number(size))})`
+  } else if (data.msg == 'Streaming') {
+    document.getElementById('dl_progressbar').setAttribute('value', data.complete)
+  } else if (data.msg === 'Stream complete') {
+    inputs.innerHTML = '';
+    if (keepAlive) clearInterval(keepAlive);
+    dlbutton.classList.add('o-download__files');
+    dlbutton.classList.remove('o-download__wait');
+    dlbutton.removeAttribute('disabled');
+    if (dialog.open) dialog.close();
+  }
+});
+  } else {
+    dlbutton.hidden = true;
+    document.getElementById('download_resource').classList.remove('large_download');
+  }
+</script>
+
+</body>
+</html>
